@@ -1,0 +1,215 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header { /* ниже перечисленны стиля для липкого меню */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 50px;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 50px;
+    background-color: #212121;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0; /* Убираем отступы по горизонтали и уменьшаем отступы сверху и снизу */
+    margin: 0;
+    list-style-type: none; /* Убираем маркеры списка */
+}
+
+.menu .menu_link {
+    color: aliceblue;
+    font-size: 15px; /* Заменяем "font-style" на "font-size" */
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 42px;
+    margin-right: 0; /* Убираем дополнительные отступы между элементами */
+}
+
+.menu .menu_item:last-child {
+    border-right: none; /* Убираем пунктирную линию с последнего элемента */
+}
+
+.subheader {
+    position: absolute; /* для наложения блока на следующий блок и не забываем установить родителю position: relative */
+    width: 100%; /* так же указываем ширину этому блоку */
+    height: 87px;
+    background-color: rgba(0, 0, 0, .6);
+}
+.subheader .subheaderimg {
+    margin-top: 16px;
+    max-width: 100%;
+}
+.subheader .subheadertext {
+    margin-top: 6px;
+    opacity: 0.5;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.subheader .subheadercall {
+    margin-top: 16px;
+    color: #FFF;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 300;
+}
+.subheader .subheaderphone {
+    display: block;
+    margin-top: 8px;
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 12px;
+    text-decoration: none;
+}
+.subheader .subheaderbtn {
+    margin-top: 18px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0,0, 0, 0.21);
+    color:#FFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.promo {
+    min-height: 800px;
+    background: url('../img/uber_bg.png') center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+.promo .promohheader {
+    color: #FFF;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin: 0;
+}
+.promo .promosubheader {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+}
+.promo .promodescr {
+    margin-top: 22px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px; /* 133.333% */
+}
+.promo .promobtn {
+    width: 259px;
+    height: 63px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0,0, 0, 0.21);
+    color:#FFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;     /* для выставления кнопки по центру */
+    margin: 118px auto 0 auto; 
+}
+
+.work {
+    min-height: 850px;
+    background-color: mintcream;
+    padding: 29px 0 35px 0;
+}
+.work .workbtn {
+    width: 113px;
+    height: 24px;
+    border: none;
+    background-color: #212121;
+    color:#FFF;
+    font-weight: 300;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: block;     /* для выставления кнопки по центру */
+    margin: 18px auto 0 auto; 
+}
+.work .workheader {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    color: #222;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+    text-transform: uppercase;
+}
+.work .workround {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 118px;
+    height: 118px;
+    background-color: #B4E2FF;
+    border-radius: 100%;
+/*     box-sizing: border-box;
+    padding: 0; */
+}
+.work .workimg {
+    column-count: 2;
+}
+.work .workdscr {
+    color: #1EACC7;
+    font-size: 17px;
+    font-weight: 400;
+}
+.work p {
+    color: #202020;;
+    font-size: 15px;
+    font-weight: 300;
+}
+.application {
+    min-height: 850px;
+    background: url('../img/mobile_bg.png') center center/cover no-repeat;
+    padding: 29px 0 35px 0;
+}
+.application .applicationbtn {
+    width: 113px;
+    height: 24px;
+    border: none;
+    background-color: #212121;
+    color:#FFF;
+    font-weight: 300;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: block;     /* для выставления кнопки по центру */
+    margin: 18px auto 0 auto;
+}
